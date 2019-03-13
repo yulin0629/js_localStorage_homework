@@ -1,0 +1,103 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+	display: block;
+    content: ' ';
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+html {
+    background: url('https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Fdemo%2Fjavascript%2Fphoto-1469122312224-c5846569feb1.jpeg?alt=media&token=7ff9d611-d759-4349-91c7-d1dc9a03692d') center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.wrap {
+	width: 600px;
+	margin: 100px auto;
+	background-color: white;
+	padding: 20px 20px;
+}
+
+.img {
+	float: left;
+	margin-right: 30px;
+}
+
+.content {
+	float: left;
+	padding: 20px;
+}
+
+.addList {
+	margin-bottom: 50px;
+}
+
+.addList input {
+	border: 2px solid black;
+	padding: 10px;
+}
+
+.addList button {
+	padding: 10px;
+	background-color: #E0B389;
+	cursor: pointer;
+}
+
+#list>li {
+	padding: 10px 0;
+	border-bottom: 1px solid #CCC;
+}
+
+a, a:visited {
+	color: blue;
+}
