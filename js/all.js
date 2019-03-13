@@ -10,8 +10,12 @@ list.addEventListener('click', removeData);
 // update list
 updateList();
 
-function addData() {
+function addData(e) {
     var inputStr = document.getElementById('todo').value;
+    if(!inputStr) {
+        return;
+    }
+    e.preventDefault();
     todo_jobs.push(inputStr);
     updateList();
     localStorage.setItem('todo_jobs', JSON.stringify(todo_jobs));
