@@ -12,6 +12,8 @@ updateList();
 
 function addData(e) {
     var inputStr = document.getElementById('todo').value;
+    
+    // inputStr is required, if it's empty, let html5 to validate that input
     if(!inputStr) {
         return;
     }
@@ -23,11 +25,13 @@ function addData(e) {
 
 function removeData(e) {
     if (e.target.nodeName != 'A') return;
+    
+    // remove data from todo list
     e.preventDefault();
-
     var index = e.target.getAttribute('data-index');
     todo_jobs.splice(index, 1);
     localStorage.setItem('todo_jobs', JSON.stringify(todo_jobs));
+
     updateList();
 }
 
